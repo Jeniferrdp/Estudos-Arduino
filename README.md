@@ -52,4 +52,9 @@ O código realiza:
 - Estruturas condicionais para tomada de decisão
 - Acionamento dos componentes com `digitalWrite`
 
-Arquivo principal:
+
+---
+
+## 🚀 Objetivo
+
+Simular um sistema automatizado de controle de temperatura, demonstrando conceitos básicos de IoT, sensores e atuadores com Arduino.
