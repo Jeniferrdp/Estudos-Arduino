@@ -1,60 +1,56 @@
-# 🌡️ Projeto de Circuitos Eletrônicos - IoT
+# 🌡️ Electronic Circuits Project - IoT
 
-Este projeto foi desenvolvido como parte de um desafio do curso de IoT da DIO, com o objetivo de simular uma **estufa de hortaliças** utilizando o simulador Tinkercad e a plataforma Arduino.
+This project was developed as part of an IoT course challenge from DIO, aiming to simulate a greenhouse system using the Tinkercad simulator and the Arduino platform.
 
 ---
 
-## 📌 Descrição do Projeto
+## 📌 Project Description
 
-O sistema consiste em um circuito eletrônico capaz de monitorar a temperatura ambiente e tomar decisões automáticas com base nos valores obtidos.
+The system consists of an electronic circuit capable of monitoring ambient temperature and making automatic decisions based on the collected data.
 
-Foram utilizados os seguintes componentes:
+The following components were used:
 
-- Sensor de temperatura (TMP36)
-- LED vermelho
-- Buzzer (buzina)
-- Motor (simulando ventilador)
+- Temperature sensor (TMP36)
+- Red LED
+- Buzzer
+- Motor (simulating a fan)
 - Arduino
+---
+
+## ⚙️ Features
+
+The system implements the following rules:
+
+- 🌡️ Temperature Reading
+T  -he sensor continuously reads the ambient temperature
+- 🌀 Ventilation Control
+  - When the temperature is equal to or above 30°C, the motor is activated
+- 🚨 Emergency Alert
+  - When the temperature exceeds 50°C:
+- The red LED is turned on
+  - The buzzer is activateda
 
 ---
 
-## ⚙️ Funcionalidades
-
-O sistema implementa as seguintes regras:
-
-- 🌡️ **Leitura da temperatura**
-  - O sensor captura a temperatura ambiente continuamente
-
-- 🌀 **Controle de ventilação**
-  - Quando a temperatura for **igual ou maior que 30°C**, o motor é acionado
-
-- 🚨 **Alerta de emergência**
-  - Quando a temperatura ultrapassar **50°C**:
-    - O LED vermelho é acionado
-    - A buzina é ativada
-
----
-
-## 🖼️ Circuito no Tinkercad
+## 🖼️ Tinkercad Circuit
 
 ![Circuito](imagem1.png)
 
 ---
 
-## 💻 Implementação
+## 💻 Implementation
 
-Todo o controle do sistema foi desenvolvido utilizando a linguagem C na plataforma Arduino.
+- All system logic was developed using C language on the Arduino platform.
 
-O código realiza:
+- The code performs:
 
-- Leitura do sensor analógico
-- Conversão para temperatura em graus Celsius
-- Estruturas condicionais para tomada de decisão
-- Acionamento dos componentes com `digitalWrite`
-
+  - Analog sensor reading
+  - Conversion to temperature in Celsius
+  - Conditional structures for decision-making
+  - Component control using digitalWrite
 
 ---
 
-## 🚀 Objetivo
+## 🚀 Objective
 
-Simular um sistema automatizado de controle de temperatura, demonstrando conceitos básicos de IoT, sensores e atuadores com Arduino.
+To simulate an automated temperature control system, demonstrating basic concepts of IoT, sensors, and actuators using Arduino.
